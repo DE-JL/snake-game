@@ -10,16 +10,16 @@ body {
 
 #game {
     background: lightgreen;
-    width: 100vmin;
-    height: 100vmin;
+    width: 130vmin;
+    height: 90vmin;
     display: grid;
     grid-template-rows: repeat(51, 1fr);
-    grid-template-columns: repeat(51, 1fr);
+    grid-template-columns: repeat(75, 1fr);
 }
 
 .snake {
     background-color: green;
-    border: .25vmin solid green;
+    border: .5vmin solid green;
 }
 
 .apple {

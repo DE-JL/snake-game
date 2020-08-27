@@ -1,6 +1,6 @@
 import { getControlDirection } from "./controls.js";
 
-export const snakeSpeed = 15;
+export const snakeSpeed = 20;
 var snakeBody = [{x: 26, y: 26}];
 var addedSegments = 0;
 
