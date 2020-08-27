@@ -15,6 +15,7 @@ export function refresh() {
     snakeBody[0].y += controlDirection.y;
 }
 
+// Draws a divider segment element for each element of the snakeBody array.
 export function draw(gameBoard) {
     snakeBody.forEach(segment => {
         const snakeElement = document.createElement("div");
@@ -25,10 +26,13 @@ export function draw(gameBoard) {
     })
 }
 
+
 export function growSnake(growthRate) {
     addedSegments += growthRate;
 }
 
+// Checks whether the snake's body is on the apple.
+// Also is used to check whether the snake's head is not on its own body.
 export function snakeEat(position, {ignoreHeadPosition = false} = {}) {
     return snakeBody.some((segment, index) => {
         if (ignoreHeadPosition && index === 0) return false;
@@ -36,10 +40,12 @@ export function snakeEat(position, {ignoreHeadPosition = false} = {}) {
     })
 }
 
+// Checks whether positions passed in from snakeEat() are equivalent.
 function equalPositions(position1, position2) {
     return (position1.x === position2.x && position1.y === position2.y);
 }
 
+// Generates more body segments for the snake based on the growth rate.
 function addSegments() {
     for (let i = 0; i < addedSegments; i++) {
         snakeBody.push({ ...snakeBody[snakeBody.length - 1] });

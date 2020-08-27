@@ -14,6 +14,7 @@ function main(now) {
         return;
     }
 
+    // Here, the requestAnimationFrame() method was used in conjunction with the speed of the snake.
     window.requestAnimationFrame(main);
     var secsSinceRepaint = (now - latestRenderTime) / 1000;
 

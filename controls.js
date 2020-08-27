@@ -1,6 +1,7 @@
 var controlDirection = {x: 0, y: 0};
 var lastControlDirection = {x: 0, y: 0};
 
+// These are the controls (WASD + arrow keys).
 window.addEventListener("keydown", e => {
     switch (e.key) {
         case "w":
@@ -29,6 +30,7 @@ window.addEventListener("keydown", e => {
     }
 })
 
+// A control direction function is implemented so the snake cannot move unto itself (top to bottom, left to right).
 export function getControlDirection() {
     lastControlDirection = controlDirection;
     return controlDirection;
