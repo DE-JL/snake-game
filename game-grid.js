@@ -1,4 +1,4 @@
-const gridWidth = 75;
+const gridWidth = 69;
 const gridHeight = 51;
 
 // Generates a random position on the grid.

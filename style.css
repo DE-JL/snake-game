@@ -10,11 +10,11 @@ body {
 
 #game {
     background: lightgreen;
-    width: 130vmin;
+    width: 150vmin;
     height: 90vmin;
     display: grid;
     grid-template-rows: repeat(51, 1fr);
-    grid-template-columns: repeat(75, 1fr);
+    grid-template-columns: repeat(69, 1fr);
 }
 
 .snake {

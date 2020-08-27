@@ -1,7 +1,7 @@
 import { getControlDirection } from "./controls.js";
 
 export const snakeSpeed = 20;
-var snakeBody = [{x: 26, y: 26}];
+var snakeBody = [{x: 35, y: 26}];
 var addedSegments = 0;
 
 export function refresh() {

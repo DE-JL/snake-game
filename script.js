@@ -2,6 +2,8 @@ import { refresh as refreshSnake, draw as drawSnake, snakeSpeed, getSnakeHead, s
 import { refresh as refreshApple, draw as drawApple } from "./apple.js";
 import { outsideGrid } from "./game-grid.js";
 
+window.onload = confirm("Use the WASD or arrow keys to guide your snake!");
+
 var latestRenderTime = 0;
 let gameOver = false;
 const gameBoard = document.getElementById("game");
